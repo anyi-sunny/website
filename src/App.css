@@ -1,38 +1,43 @@
 .App {
   text-align: center;
+  font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-content {
+  align-items: center;
+  font-family: monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.main-content {
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Gradient background options */
+.gradient-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Option 1: Soft diagonal gradient */
+.gradient-bg-1 {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8ebff 50%, #d8dcff 100%);
+}
+
+/* Option 2: Radial gradient centered */
+.gradient-bg-2 {
+    background: radial-gradient(circle at center, #ffffff 0%, #e8ebff 50%, #7c8dff 200%);
+}
+
+/* Option 3: Multi-point mesh-like gradient */
+.gradient-bg-3 {
+    background: linear-gradient(125deg, #ffffff 0%, #e8ebff 40%, #7c8dff 200%),
+                linear-gradient(45deg, #f8f9fa 0%, #d8dcff 100%);
+    background-blend-mode: overlay;
 }
