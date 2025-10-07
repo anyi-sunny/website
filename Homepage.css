@@ -1,0 +1,58 @@
+.sticky-section {
+  position: relative;
+  height: 450vh;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  background: url('../../images/anyiHockey1.png') center/cover no-repeat;
+  z-index: 0;
+}
+
+.background.pinned {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.background.released {
+  position: absolute;
+  left: 0;
+  bottom: 0;  /* align to bottom of section */
+  width: 100%;
+  height: 100vh;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  margin-right: 10%;
+  padding-top: 50vh;
+  text-align: right;
+  align-items: right;
+  transition: opacity 0.1s linear;
+}
+
+.welcome-text {
+  color: #000000;
+  font-size: 2rem;
+  max-width: 30%;
+  height: 50vh;
+  margin-left: auto;
+  margin-right: 10%;
+  text-align: right;
+}
+
+
+.section-2 {
+  height: auto;
+  max-width: 800px;
+  align-items: center;
+  padding: 50px;
+  margin: 50px auto;
+  background-color: white;
+  color: black;
+}

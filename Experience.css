@@ -1,0 +1,215 @@
+/* Experience.css */
+
+.experience-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+}
+
+.experience-section {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    height: 500px;
+    padding: 20px 60px;
+    margin: 0 auto;
+    max-width: 1000px;
+    perspective: 2000px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #7c8dff;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: #5a6be6;
+}
+
+.carousel-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.carousel-items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+}
+
+.carousel-item {
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.carousel-item.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) rotateY(0deg) translateZ(0);
+}
+
+.carousel-item.prev,
+.carousel-item.next {
+    opacity: 0.6;
+    visibility: visible;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.carousel-item.prev {
+    transform: translate(-180%, -50%) rotateY(-30deg) translateZ(-200px);
+}
+
+.carousel-item.prev:hover {
+    opacity: 0.8;
+    transform: translate(-170%, -50%) rotateY(-25deg) translateZ(-180px);
+}
+
+.carousel-item.next {
+    transform: translate(80%, -50%) rotateY(30deg) translateZ(-200px);
+}
+
+.carousel-item.next:hover {
+    opacity: 0.8;
+    transform: translate(70%, -50%) rotateY(25deg) translateZ(-180px);
+}
+
+.experience-tile {
+    background-color: #ffffff;
+    border: 2px solid #7c8dff;
+    border-radius: 15px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-tile:hover {
+    transform: translateY(-5px);
+}
+
+.tile-image-container {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    background-color: #f8f9fa;
+}
+
+.tile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.tile-image:hover {
+    transform: scale(1.05);
+}
+
+.tile-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.tile-title {
+    color: #333;
+    font-size: 1.3rem;
+    margin: 0 0 8px 0;
+}
+
+.tile-organization {
+    color: #7c8dff;
+    font-size: 1.1rem;
+    margin: 0 0 4px 0;
+}
+
+.tile-duration {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0 0 12px 0;
+}
+
+.tile-description {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.tile-description li {
+    color: #444;
+    margin-bottom: 6px;
+    line-height: 1.3;
+    text-align: left;
+    font-size: 0.9rem;
+    position: relative;
+    padding-left: 1.2em;
+}
+
+.tile-description li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #7c8dff;
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        padding: 10px;
+    }
+
+    .carousel {
+        padding: 10px 0;
+    }
+
+    .carousel-content {
+        max-width: 100%;
+    }
+
+    .experience-tile {
+        padding: 15px;
+    }
+}
