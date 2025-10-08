@@ -1,5 +1,6 @@
 import React from 'react';
 import './Bio.css';
+import headshot from './headshot.jpeg'
 
 const Bio: React.FC = () => {
     console.log('Bio component rendering');
@@ -8,7 +9,7 @@ const Bio: React.FC = () => {
         <div className="gradient-bg gradient-bg-1" />
         <div className="bio-container">
             <img 
-                src={require('./headshot.jpeg')} 
+                src={headshot} 
                 alt="Anyi Sun" 
                 className="bio-picture" 
             />
