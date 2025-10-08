@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d54ac831.css",
+    "main.js": "/static/js/main.6adad01a.js",
+    "static/js/453.e1ad7adf.chunk.js": "/static/js/453.e1ad7adf.chunk.js",
+    "static/media/anyiHockey1.png": "/static/media/anyiHockey1.ae6204ec811d7225bf94.png",
+    "static/media/headshot.png": "/static/media/headshot.d138313e2680477993af.png",
+    "static/media/IMG_1391jpg.jpeg": "/static/media/IMG_1391jpg.4343b6ef80b7df0697b2.jpeg",
+    "static/media/logo_copy.png": "/static/media/logo_copy.ba28219595019c38a785.png",
+    "static/media/washU.png": "/static/media/washU.701b7be7e40d21ccae80.png",
+    "static/media/BSG-logo-black.svg": "/static/media/BSG-logo-black.76d8aa2995d49a2c0d4d24a967679344.svg",
+    "index.html": "/index.html",
+    "main.d54ac831.css.map": "/static/css/main.d54ac831.css.map",
+    "main.6adad01a.js.map": "/static/js/main.6adad01a.js.map",
+    "453.e1ad7adf.chunk.js.map": "/static/js/453.e1ad7adf.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d54ac831.css",
+    "static/js/main.6adad01a.js"
+  ]
+}

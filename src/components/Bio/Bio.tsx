@@ -1,6 +1,6 @@
 import React from 'react';
 import './Bio.css';
-import headshot from './headshot.jpeg'
+import headshot from './headshot.png'
 
 const Bio: React.FC = () => {
     console.log('Bio component rendering');
