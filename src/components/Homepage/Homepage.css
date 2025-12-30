@@ -56,3 +56,18 @@
   background-color: white;
   color: black;
 }
+
+.button {
+  background-color: rgb(186, 173, 255);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgb(153, 137, 229);
+  color: white;
+  cursor: pointer;
+}

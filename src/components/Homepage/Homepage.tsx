@@ -65,6 +65,12 @@ export default function Homepage() {
                 I play NCAA D3 hockey at Bowdoin College where I am a senior!
                 I am pursuing a double major in Computer Science and Mathematics as well as a minor in visual arts!</p>
         </section>
+        <section className="section-2">
+            <p>I've recently put together a personal project utilizing GenAI which stores the recipes I like to use and 
+                I can easily improve upon them with the help of AI.
+            </p>
+            <a href="https://culinarycraft.sp-devs.com/" className="button">Culinary Craft</a>
+        </section>
     </div>
   );
 }
