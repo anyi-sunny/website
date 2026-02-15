@@ -43,14 +43,21 @@ export default function Homepage() {
                     <p>This site doubles as an opportunity to practice my frontend skills... </p>
                 </div>
             </div>
-                    <div
+            <div
             className="content"
             >
                 <div className="welcome-text" style={{color:'rgb(114, 135, 255)'}}>
                     <p>But also show off my experience!</p>
                 </div>
             </div>
-                    <div
+                        <div
+            className="content"
+            >
+                <div className="welcome-text">
+                    <p>Feel free to check out my art in Portfolio, my experience, or scroll down to see my latest project. </p>
+                </div>
+            </div>
+            <div
             className="content"
             >
                 <div className="welcome-text">

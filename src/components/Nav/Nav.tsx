@@ -26,6 +26,9 @@ const Nav: React.FC = () => {
         <div className='nav-item' onClick={() => window.location.href = "/experience"}>
             <Link to="/experience" className="nav-link">Experience</Link>
         </div>
+        <div className='nav-item' onClick={() => window.location.href = "/portfolio"}>
+            <Link to="/portfolio" className="nav-link">Portfolio</Link>
+        </div>
       </div>
     </nav>
   );

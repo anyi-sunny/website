@@ -201,15 +201,150 @@
         padding: 10px;
     }
 
-    .carousel {
-        padding: 10px 0;
+    .section-title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
     }
 
-    .carousel-content {
+    .carousel {
+        height: 400px;
+        padding: 20px 40px;
         max-width: 100%;
     }
 
+    .carousel-button {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .carousel-button.prev {
+        left: 5px;
+    }
+
+    .carousel-button.next {
+        right: 5px;
+    }
+
+    .carousel-item {
+        width: 300px;
+    }
+
+    .carousel-item.prev {
+        transform: translate(-160%, -50%) rotateY(-30deg) translateZ(-200px);
+    }
+
+    .carousel-item.prev:hover {
+        transform: translate(-150%, -50%) rotateY(-25deg) translateZ(-180px);
+    }
+
+    .carousel-item.next {
+        transform: translate(60%, -50%) rotateY(30deg) translateZ(-200px);
+    }
+
+    .carousel-item.next:hover {
+        transform: translate(50%, -50%) rotateY(25deg) translateZ(-180px);
+    }
+
     .experience-tile {
+        height: 350px;
+        padding: 0;
+    }
+
+    .tile-title {
+        font-size: 1.1rem;
+    }
+
+    .tile-organization {
+        font-size: 1rem;
+    }
+
+    .tile-description li {
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experience-container {
+        padding: 10px 5px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+
+    .carousel {
+        height: 350px;
+        padding: 15px 30px;
+        margin: 0;
+    }
+
+    .carousel-button {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+    .carousel-button.prev {
+        left: 5px;
+    }
+
+    .carousel-button.next {
+        right: 5px;
+    }
+
+    .carousel-item {
+        width: 250px;
+    }
+
+    .carousel-item.prev {
+        transform: translate(-150%, -50%) rotateY(-30deg) translateZ(-200px);
+    }
+
+    .carousel-item.prev:hover {
+        transform: translate(-140%, -50%) rotateY(-25deg) translateZ(-180px);
+    }
+
+    .carousel-item.next {
+        transform: translate(50%, -50%) rotateY(30deg) translateZ(-200px);
+    }
+
+    .carousel-item.next:hover {
+        transform: translate(40%, -50%) rotateY(25deg) translateZ(-180px);
+    }
+
+    .experience-tile {
+        height: 300px;
+        padding: 0;
+    }
+
+    .tile-content {
         padding: 15px;
+    }
+
+    .tile-image-container {
+        height: 120px;
+    }
+
+    .tile-title {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .tile-organization {
+        font-size: 0.9rem;
+        margin-bottom: 3px;
+    }
+
+    .tile-duration {
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+    }
+
+    .tile-description li {
+        font-size: 0.8rem;
+        margin-bottom: 4px;
+        padding-left: 1em;
     }
 }
