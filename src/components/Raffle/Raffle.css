@@ -1,0 +1,151 @@
+.raffle-page {
+  min-height: 100vh;
+}
+
+.raffle-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: white;
+  color: black;
+}
+
+.raffle-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.upload-area {
+  margin-bottom: 1.5rem;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-label {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: 2px dashed #7c8dff;
+  border-radius: 8px;
+  color: #7c8dff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.upload-label:hover {
+  background-color: #7c8dff;
+  color: white;
+}
+
+.raffle-error {
+  color: #e74c3c;
+  font-size: 0.9rem;
+}
+
+.raffle-info {
+  margin-top: 1.5rem;
+}
+
+.raffle-info > p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.entries-table {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 1.5rem;
+}
+
+.entries-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.entries-table th,
+.entries-table td {
+  padding: 0.5rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.entries-table th {
+  color: #7c8dff;
+  font-weight: 600;
+}
+
+.raffle-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.draw-button {
+  padding: 0.75rem 2rem;
+  background-color: #7c8dff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-family: monospace;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.draw-button:hover {
+  background-color: #5a6fe0;
+}
+
+.reset-button {
+  padding: 0.75rem 2rem;
+  background-color: transparent;
+  color: #999;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: monospace;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.reset-button:hover {
+  color: #e74c3c;
+  border-color: #e74c3c;
+}
+
+.winners-section {
+  margin-top: 2rem;
+}
+
+.winners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.winner-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #f0f2ff, #e8ebff);
+  border-radius: 8px;
+  border-left: 4px solid #7c8dff;
+}
+
+.winner-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #7c8dff;
+}
+
+.winner-name {
+  font-size: 1.1rem;
+  color: #333;
+}
