@@ -24,18 +24,21 @@ export default function Raffle() {
     const reader = new FileReader();
     reader.onload = (event) => {
       const text = event.target?.result as string;
-      const lines = text.split("\n").filter((line) => line.trim() !== "");
+      const lines = text.split("\n");
 
       try {
         const parsed: RaffleEntry[] = [];
-        // Skip header row (index 0)
-        for (let i = 1; i < lines.length; i++) {
-          const cols = lines[i].split(",");
-          if (cols.length < 3) continue;
+        for (const line of lines) {
+          const trimmed = line.trim();
+          // Only process data rows (start with a date like "3/24/2026")
+          if (!trimmed || !/^\d{1,2}\//.test(trimmed)) continue;
+
+          const cols = trimmed.split(",");
+          if (cols.length < 4) continue;
 
           const name = cols[1].trim();
-          const ticketPart = cols[2].trim().split(" ");
-          const tickets = parseInt(ticketPart[0], 10);
+          // Ticket info is in column 4 (index 3), format: "15 for 5$" or "60 tickets for $20"
+          const tickets = parseInt(cols[3].trim(), 10);
 
           if (name && !isNaN(tickets) && tickets > 0) {
             parsed.push({ name, tickets });
@@ -43,7 +46,7 @@ export default function Raffle() {
         }
 
         if (parsed.length === 0) {
-          setError("No valid entries found in CSV. Expected format: column 1 = any, column 2 = name, column 3 = \"N x $amount\"");
+          setError("No valid entries found. Expected CSV with columns: Timestamp, Name, Contact, Ticket info (e.g. \"15 for $5\")");
           setEntries([]);
         } else {
           setEntries(parsed);
