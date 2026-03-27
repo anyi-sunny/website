@@ -4,6 +4,7 @@ import './App.css';
 import Homepage from './components/Homepage/Homepage';
 import Bio from './components/Bio/Bio';
 import Experience from './components/Experience/Experience';
+import Portfolio from './components/Portfolio/Portfolio';
 import Raffle from './components/Raffle/Raffle';
 import Nav from './components/Nav/Nav';
 
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/bio" element={<Bio />} />
             <Route path="/experience" element={<Experience />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/raffle" element={<Raffle />} />
             <Route path="/" element={<Homepage />} />
           </Routes>

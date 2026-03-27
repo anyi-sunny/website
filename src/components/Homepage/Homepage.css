@@ -1,39 +1,28 @@
 .sticky-section {
   position: relative;
-  height: 450vh;
-  overflow: hidden;
 }
 
 .background {
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 100vh;
   background: url('../../images/anyiHockey1.png') center/cover no-repeat;
   z-index: 0;
 }
 
-.background.pinned {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.background.released {
-  position: absolute;
-  left: 0;
-  bottom: 0;  /* align to bottom of section */
-  width: 100%;
-  height: 100vh;
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  margin-top: -100vh;
+  padding-bottom: 60vh;
 }
 
 .content {
   position: relative;
-  z-index: 1;
   margin-right: 10%;
   padding-top: 50vh;
   text-align: right;
-  align-items: right;
-  transition: opacity 0.1s linear;
 }
 
 .welcome-text {
@@ -55,4 +44,125 @@
   margin: 50px auto;
   background-color: white;
   color: black;
+}
+
+.button {
+  background-color: rgb(186, 173, 255);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: rgb(153, 137, 229);
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+  .welcome-text {
+    font-size: 1.5rem;
+    max-width: 40%;
+    height: 40vh;
+  }
+
+  .content {
+    margin-right: 5%;
+    padding-top: 30vh;
+  }
+
+  .content-wrapper {
+    padding-bottom: 40vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin-right: 2%;
+    padding-top: 25vh;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    padding-bottom: 100vh;
+  }
+
+  .welcome-text {
+    color: #ffffff;
+    font-size: 1.3rem;
+    max-width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.25rem 0.75rem;
+  }
+
+  .welcome-text h1,
+  .welcome-text p {
+    margin: 0.25rem auto;
+    color: #ffffff;
+  }
+}
+
+@media (max-width: 480px) {
+  .background {
+    height: 100vh;
+  }
+
+  .content {
+    margin-right: 0;
+    padding-top: 20vh;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .content-wrapper {
+    padding-bottom: 100vh;
+  }
+
+  .welcome-text {
+    color: #ffffff;
+    font-size: 1.1rem;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 2vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 0.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+  }
+
+  .welcome-text h1 {
+    font-size: 1.8rem;
+    margin: 0.1rem 0;
+    color: #ffffff;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin: 0.15rem 0;
+    color: #ffffff;
+  }
+
+  .section-2 {
+    padding: 20px;
+    margin: 30px 10px;
+  }
 }

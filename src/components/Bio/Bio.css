@@ -46,26 +46,57 @@
     .bio-container {
         flex-direction: column;
         align-items: center;
+        margin: 50px 15px;
+        padding: 15px;
     }
 
     .bio-picture {
+        width: 250px;
+        height: 350px;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
     .bio-content {
         text-align: center;
+        margin: 15px;
     }
 
     .bio-header {
         text-align: center;
+        font-size: 1.5rem;
     }
 
     .bio-text {
         text-align: center;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .bio-container {
+        margin: 30px 10px;
+        padding: 10px;
+        border: 3px solid #7c8dff;
+    }
+
+    .bio-picture {
+        width: 200px;
+        height: 300px;
+        margin-bottom: 15px;
     }
 
     .bio-content {
-        text-align: center;
+        margin: 10px;
+    }
+
+    .bio-header {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .bio-text {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 }

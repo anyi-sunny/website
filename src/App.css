@@ -6,11 +6,7 @@
 .main-content {
   align-items: center;
   font-family: monospace;
-}
-
-.main-content {
   margin: 0 auto;
-  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
 }
@@ -40,4 +36,26 @@
     background: linear-gradient(125deg, #ffffff 0%, #e8ebff 40%, #7c8dff 200%),
                 linear-gradient(45deg, #f8f9fa 0%, #d8dcff 100%);
     background-blend-mode: overlay;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .App {
+    font-size: calc(10px + 1.5vmin);
+  }
+
+  .main-content {
+    padding: 0;
+    overflow-x: clip;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+    font-size: calc(10px + 1vmin);
+  }
+
+  body {
+    overflow-x: clip;
+  }
 }

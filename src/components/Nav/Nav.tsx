@@ -4,7 +4,7 @@ import './Nav.css';
 
 const Nav: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  
+
   return (
     <nav className="app-nav">
         <div className='nav-item' onClick={() => window.location.href = "/"}>
@@ -12,7 +12,7 @@ const Nav: React.FC = () => {
                 Anyi Sun
             </Link>
         </div>
-      
+
       <button className="hamburger" onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <span></span>
         <span></span>
@@ -25,6 +25,9 @@ const Nav: React.FC = () => {
         </div>
         <div className='nav-item' onClick={() => window.location.href = "/experience"}>
             <Link to="/experience" className="nav-link">Experience</Link>
+        </div>
+        <div className='nav-item' onClick={() => window.location.href = "/portfolio"}>
+            <Link to="/portfolio" className="nav-link">Portfolio</Link>
         </div>
         <div className='nav-item' onClick={() => window.location.href = "/raffle"}>
             <Link to="/raffle" className="nav-link">Raffle</Link>
